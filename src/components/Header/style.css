@@ -1,0 +1,46 @@
+
+.App-header {
+    background-color: rgba(245, 245, 245, 1);
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(154, 152, 153, 0.082);
+
+  }
+.header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+
+}  
+
+  .App-header>img {
+      padding: 20px;
+      min-width: 105px;
+      cursor: pointer;
+  }
+  .App-header>img:hover {
+      filter: brightness(150%)
+  }
+
+@media screen and (max-width: 660px) {
+    .App-header {
+        height: 15vh;
+    }
+    .header {
+        width: 90%;
+        margin: 0 5px;
+    }
+    .header {
+        justify-content: center;
+    }
+
+}
+

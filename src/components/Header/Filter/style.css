@@ -1,0 +1,79 @@
+.searchForm {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    min-width: 290px;
+    max-height: 465px;
+    height: 45px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.searchForm>input {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #E0E0E0;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    color: #635f5f;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+.searchForm>input::placeholder {
+    color: #E0E0E0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.searchForm>button {
+    right: 10px;
+    position: absolute;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #27AE60;
+    color: white;
+    font-family: 'Inter', 'sans-serif';
+    cursor: pointer;
+}
+.searchForm>button:hover {
+    filter: brightness(120%);
+}
+
+
+.popUp {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    background-color: #df1818;
+    border: 2px solid #635f5f;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+    font-family: 'inter', 'sans-serif';
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 5;
+    
+}
+
+.popUp>.seta {
+    border-bottom: 20px solid #635f5f;; 
+    border-left: 15px solid transparent; 
+    border-right: 15px solid transparent; 
+    height: 0; 
+    width: 20px; 
+    height: 20px;
+
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 40px;
+    color: #635f5f;
+}

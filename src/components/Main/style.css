@@ -1,0 +1,86 @@
+
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+.container {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.512);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal>.modalDiv {
+    position: relative;
+    padding: 9%;
+    background-color: rgba(224, 224, 224, 1);
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'inter', sans-serif;
+
+    
+}
+
+.modal>.modalDiv>.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: none;
+    padding: 4px 10px;
+    background-color: rgb(208, 17, 17);
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.modal>.modalDiv>.close:hover {
+    background-color: rgb(142, 9, 9);
+  
+}
+@media screen and (max-width: 660px) {
+  main {
+      width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main>.container {
+        width: 100%;
+        flex-flow: row nowrap;
+        overflow-x: scroll;
+
+
+    }
+  }
